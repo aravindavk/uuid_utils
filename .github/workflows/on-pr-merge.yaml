@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install Crystal and other dependencies
+      run: |
+        curl -fsSL https://crystal-lang.org/install.sh | sudo bash
     - name: Generate
       run: |
         crystal doc
