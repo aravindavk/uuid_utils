@@ -1,0 +1,10 @@
+name: uuid_utils
+version: 0.1.0
+
+authors:
+  - Aravinda Vishwanathapura <mail@aravindavk.in>
+
+description: |
+  UUID utilities uuid3, uuid4 and uuid5
+
+license: MIT
