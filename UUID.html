@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.6.2">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="uuid_utils">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="uuid_utils">
+  <title>UUID - uuid_utils main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          uuid_utils
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="uuid_utils/UUID" data-name="uuid">
+      <a href="UUID.html">UUID</a>
+      
+        <ul>
+  
+  <li class=" " data-id="uuid_utils/UUID/Namespace" data-name="uuid::namespace">
+      <a href="UUID/Namespace.html">Namespace</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> UUID
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="UUID.html">UUID</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Represents a UUID (Universally Unique IDentifier).</p>
+
+
+
+
+
+  <h2>
+    <a id="included-modules" class="anchor" href="#included-modules">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Included Modules
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type">Comparable(<a href="UUID.html">UUID</a>)</li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/aravindavk/uuid_utils/blob/e965dfb07bc70736ff0cae16f5c2e54b2f108768/src/uuid_utils.cr#L7" target="_blank">
+        uuid_utils.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#uuid3%28ns%3AUUID%7CNamespace%2Cvalue%29-class-method" class="signature"><strong>.uuid3</strong>(ns : UUID | Namespace, value)</a>
+        
+          <div class="summary"><p>Generate a UUID from the MD5 hash of a namespace UUID and a name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uuid4-class-method" class="signature"><strong>.uuid4</strong></a>
+        
+          <div class="summary"><p>Generate a random UUID.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#uuid5%28ns%3AUUID%7CNamespace%2Cvalue%29-class-method" class="signature"><strong>.uuid5</strong>(ns : UUID | Namespace, value)</a>
+        
+          <div class="summary"><p>Generate a UUID from the SHA-1 hash of a namespace UUID and a name.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="uuid3(ns:UUID|Namespace,value)-class-method">
+      <div class="signature">
+        
+        def self.<strong>uuid3</strong>(ns : <a href="UUID.html">UUID</a> | <a href="UUID/Namespace.html">Namespace</a>, value)
+
+        <a class="method-permalink" href="#uuid3%28ns%3AUUID%7CNamespace%2Cvalue%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generate a UUID from the MD5 hash of a namespace UUID and a name.</p>
+<p>Example:</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;uuid_utils&quot;</span>
+
+namespace <span class="o">=</span> <span class="t">UUID</span>.new(<span class="s">&quot;68ab717d-d847-4277-be1a-303be8ac3d97&quot;</span>)
+msg <span class="o">=</span> <span class="s">&quot;Hello World!&quot;</span>
+puts <span class="t">UUID</span>.uuid3(namespace, msg) <span class="c"># =&gt; 33056d85-5061-31c8-9656-df07f3eec397</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/aravindavk/uuid_utils/blob/e965dfb07bc70736ff0cae16f5c2e54b2f108768/src/uuid_utils.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uuid4-class-method">
+      <div class="signature">
+        
+        def self.<strong>uuid4</strong>
+
+        <a class="method-permalink" href="#uuid4-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generate a random UUID.</p>
+<p>Example:</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;uuid_utils&quot;</span>
+
+puts <span class="t">UUID</span>.uuid4 <span class="c"># =&gt; 39e54402-44c6-42c6-be52-4bb9ab18a5fa</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/aravindavk/uuid_utils/blob/e965dfb07bc70736ff0cae16f5c2e54b2f108768/src/uuid_utils.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="uuid5(ns:UUID|Namespace,value)-class-method">
+      <div class="signature">
+        
+        def self.<strong>uuid5</strong>(ns : <a href="UUID.html">UUID</a> | <a href="UUID/Namespace.html">Namespace</a>, value)
+
+        <a class="method-permalink" href="#uuid5%28ns%3AUUID%7CNamespace%2Cvalue%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generate a UUID from the SHA-1 hash of a namespace UUID and a name.</p>
+<p>Example:</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;uuid_utils&quot;</span>
+
+namespace <span class="o">=</span> <span class="t">UUID</span>.new(<span class="s">&quot;68ab717d-d847-4277-be1a-303be8ac3d97&quot;</span>)
+msg <span class="o">=</span> <span class="s">&quot;Hello World!&quot;</span>
+puts <span class="t">UUID</span>.uuid5(namespace, msg) <span class="c"># =&gt; 562ed049-5b55-582d-ba51-812a786927ca</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/aravindavk/uuid_utils/blob/e965dfb07bc70736ff0cae16f5c2e54b2f108768/src/uuid_utils.cr#L78" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
